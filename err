@@ -1,0 +1,21 @@
+Array2D.h:    Tp& operator ()(const int i, const int j) const
+Array2D.h:    Tp& operator ()(int i, int j)
+Dimer.h:  Dimer(Site& head, Site& tail);
+Dimer.h:  Site& get_neighbouring_site(int i);
+Dimer.h:  void draw(ostream& out) const;
+dimers.h:  void initialize_accessible_sites(Lattice& lt)
+dimers.h:    { Site& s = dm->get_neighbouring_site(i);
+dimers.h:      { itr = _accessible_sites.find(&s);
+dimers.h:  void draw(ostream& out)
+Dimers.h:  Dimers(Lattice& lt);
+Dimers.h:  void initialize_accessible_sites(Lattice& lt);
+Dimers.h:  void draw(ostream& out);
+Lattice.h:  Site& get_site(int x, int y);
+Lattice.h:  void check_boundary(int& x, int& y);
+Lattice.h:  void check_boundary(Site::Orientation& ort);
+Site.h:  Site(Orientation& ort);
+Site.h:  Orientation& get_Orientation();
+Site.h:  void set_Orientation(Orientation& ort);
+Site.h:  void add_neighbour(Site& n);
+Site.h:  vector<Site*>&  get_neighbours();
+test.h:  Site& get_site(const int x, const int y);
